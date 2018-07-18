@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="vue">
+        <button v-on:click="primero++">Incrementar el primero</button>
+        <button v-on:click="segundo++">Incrementar el segundo</button>
+        <button v-on:click="tercero++">Incrementar el tercero</button>
+        <button v-on:click="cuarto++">Incrementar el cuarto</button>
+        <p>primero{{primero}}</p>
+        <p>segundo{{segundo}}</p>
+        <p>tercero{{tercero}}</p>
+        <p>cuarto{{cuarto}}</p>
+        <p>total{{total}}</p>
+        <span>{{ mostrarMensaje() }}</span>
+        <button v-on:click="mensaje='Este es el nuevo mensaje'">Cambiar Mensaje</button>
+        <button v-on:click="destruir"> Destruir Instancia</button>
+        <br>
+        <input type="text" v-model="nombre">
+        <br>
+        Hola {{ nombre }}. bienvenido
+        <!-- v-bind directiva -->
+        <img v-bind:src="src">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/vue.js"></script>
+</body>
+</html>
